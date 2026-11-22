@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <form method="POST">
+        <h3 style="text-align: center">Sign Up</h3>
+        <label for="fullname"> Full Name: </label>
+        <br />
+        <input class="details" type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+        <br /><br />
+        <label for="email"> Email: </label>
+        <br />
+        <input class="details" type="email" placeholder="you@example.com" required/>
+        <br /><br />
+        <label for="password"> Password: </label>
+        <br />
+        <input class="details" type="password" placeholder="Enter your password" required/>
+        <br />
+        <br />
+        <label for="confirm-password"> Cofirm password: </label>
+        <br />
+        <input class="details" type="password" placeholder="Re-enter your password"/>
+        <br />
+        <br />
+        
+        <label>Gender:</label>
+        <br>
+        
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+        <label>Interests:</label>
+        <br>
+        <input type="checkbox" name="interests[]" id="coding" value="Coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" name="interests[]" id="reading" value="Reading">
+        <label for="Reading">Reading</label>
+        <input type="checkbox" name="interests[]" id="travelling" value="Travelling">
+        <label for="Travelling">Travelling</label>
+        <br><br>
+        <label for="country">Country:</label>
+        <br>
+        <select class="Checkbox" name="country" id="country" required>
+          <option value="">Select Country</option>
+          <option value="Bangladesh">Bangladesh</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+        </select>
+        <br><br>
+        <label for="dob">Date of birth:</label>
+        <br>
+        <input class="Checkbox" type="date" required>
+        <br><br>
+        <label for="phone">Phone Number:</label>
+        <br>
+        <input class="Checkbox" type="tel" required>
+        <br><br>
+        <label for="address">Address:</label>
+        <br>
+        <textarea id="address" name="address" style="height: 100px;width: 100%;"></textarea>
+        <br><br>
+        <input type="checkbox" id="terms" name="terms" value="accepted" required>
+        <label>I agree to the Terms & Conditions</label>
+        <button type="submit" class="login">Sign Up</button>
+        <button type="reset" class="reset">Reset</button>
+        <br />
+        <br />
+        <p style="text-align: center">
+          Already have an account? <a href="index.html">Log in</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
